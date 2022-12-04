@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f245e6ade46975b42912a0bdcd673818, type: 3}
+  m_Name: Boss 1
+  m_EditorClassIdentifier: 
+  worldName: Boss World
+  isGrindLevel: 0
+  is12PieceRing: 0
+  isDoubleRing: 0
+  isBoss: 1
+  isAnimalLevel: 0
+  isReleaseAnimalToDen: 0
+  isKeyLevel: 0
+  showIntroLevelAnimation: 1
+  boardPrefab: {fileID: 6382559071292991177, guid: d894387e596541a499e451e53981c9a6,
+    type: 3}
+  clipPrefab: {fileID: 0}
+  levelNum: 1
+  worldNum: 100
+  levelIndexInZone: 1
+  numIndexForLeaderBoard: 0
+  tutorialIndexForList: 0
+  cellsCountInLevel: 8
+  levelDifficulty: 0
+  RandomSlicePositions: 1
+  allowRepeatSlices: 0
+  allowRepeatTiles: 0
+  allowRepeatTileSides: 0
+  powerupsForLevel: 
+  stoneTiles: []
+  slicesToSpawn: []
+  RewardBags: 
+  levelAvailableColors: 000000000100000002000000
+  levelAvailablesymbols: 000000000100000002000000
+  symbolsNeededForSpecialPowers: []
+  isSpecificTutorial: 0
+  isTutorial: 0
+  specificTutorialEnum: 0
+  bottomUIToShow: 2
+  arrayOfPieces: []
+  specificSliceSpots: 
+  specificSlicesShapes: 
+  specificSlicesColors: 
+  BossHealth: 500
+  isRandomPieces: 1
+  specificPiecesIndex: 000000000300000006000000
+  rubyRewardNoDefeat: 10
+  rubyRewardDefeat: 100
+  ver1Boss: 1
+  timeForLevelInSeconds: 0
+  dealButtonTimer: 0
+  damageToBossCompeleRing: 0
+  useLastClipAlgoritm: 0
+  algoritmStepsWanted: 0
+  levelStartDialogueSO: {fileID: 11400000, guid: 857178ad1c5e0d04da31c2a36ccc9264,
+    type: 2}
+  levelEndDialogueSO: {fileID: 11400000, guid: b84002b1cbc19534cb5f7c400ae8f282, type: 2}

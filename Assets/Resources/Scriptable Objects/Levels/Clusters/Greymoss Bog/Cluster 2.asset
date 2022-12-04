@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a2a0f1ba9a582e4db10d29417d63495, type: 3}
+  m_Name: Cluster 2
+  m_EditorClassIdentifier: 
+  clusterLevels:
+  - {fileID: 11400000, guid: e968e819bfcb1714ba2a3f3a8edaf1e2, type: 2}
+  - {fileID: 11400000, guid: 8638a7178ea93ec46b1164b080f29657, type: 2}
+  - {fileID: 11400000, guid: db5cada3701a66d4f82e167b49b0f4a4, type: 2}
+  - {fileID: 11400000, guid: 6cd369aad38c96b438cd26dbea2b52b7, type: 2}
+  chestLootPacksCluster:
+  - lootPacksForChest: 0900000009000000090000000a000000
+  specificClsuterStatue: {fileID: 3670214051509353235, guid: 0ce9e02b014102b468a74fddc1561f1f,
+    type: 3}
