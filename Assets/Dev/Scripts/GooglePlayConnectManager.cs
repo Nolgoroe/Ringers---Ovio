@@ -285,7 +285,7 @@ public class GooglePlayConnectManager : MonoBehaviour
     public IEnumerator SwitchAccount()
     {
         SignOutButton();
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(3);
         SignInButton();
     }
 }
