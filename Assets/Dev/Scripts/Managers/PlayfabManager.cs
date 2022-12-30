@@ -1473,7 +1473,7 @@ public class PlayfabManager : MonoBehaviour
         }
         else
         {
-            GetDeviceID(out string androidID, out string customID);
+            GameManager.Instance.GetDeviceID(out string androidID, out string customID);
 
             string name = string.Empty;
 
@@ -1508,69 +1508,6 @@ public class PlayfabManager : MonoBehaviour
         }
     }
 
-    void GetDeviceID(out string androidID, out string customID)
-    {
-        androidID = string.Empty;
-        customID = string.Empty;
-
-
-#if UNITY_EDITOR
-        Debug.Log("Unity Editor");
-
-        customID = SystemInfo.deviceUniqueIdentifier;
-
-        if (customID.Length > 20)
-        {
-            customID = customID.Substring(0, 20);
-        }
-        else
-        {
-            customID = customID.Substring(0, customID.Length);
-        }
-
-        GooglePlayConnectManager.instance.statusText.text = "Unity Editor";
-#else
-
-        GooglePlayConnectManager.instance.statusText.text = "NOT Unity Editor";
-
-        androidID = string.Empty;
-        customID = string.Empty;
-
-        if (Application.platform == RuntimePlatform.Android)
-        {
-            AndroidJavaClass unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
-
-            AndroidJavaObject activity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
-            AndroidJavaObject contentResolver = activity.Call<AndroidJavaObject>("getContentResolver");
-            AndroidJavaClass secure = new AndroidJavaClass("android.provider.Settings$Secure");
-            androidID = secure.CallStatic<string>("getString", contentResolver, "android_id");
-
-            if (androidID.Length > 20)
-            {
-                androidID = androidID.Substring(0, 20);
-            }
-            else
-            {
-                androidID = androidID.Substring(0, androidID.Length);
-            }
-        }
-        else
-        {
-            customID = SystemInfo.deviceUniqueIdentifier;
-
-            if (customID.Length > 20)
-            {
-                customID = customID.Substring(0, 20);
-            }
-            else
-            {
-                customID = customID.Substring(0, customID.Length);
-            }
-
-        }
-
-#endif
-    }
 
     void OnPressPlayPlayerExists(LoginResult result)
     {
